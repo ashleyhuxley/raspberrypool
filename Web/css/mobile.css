@@ -1,0 +1,191 @@
+html {
+  color: #EBEBEB;
+  font-size: 1em;
+  line-height: 1.4;
+  background: #202d45;
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body {
+	margin: 20px;
+}
+
+header
+{
+	font-size: 1.5em;
+	letter-spacing: 0.1em;
+	margin-bottom: 20px;
+}
+
+img#logo
+{
+	margin-right: 20px;
+}
+
+div.temp, div.status
+{
+	font-family: 'Open Sans Condensed', sans-serif;
+	margin-bottom: 15px;
+	padding: 10px;
+	background-color: #00000044;
+	letter-spacing: 0.2em;
+	width: 100%;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.label
+{
+	font-size: 1.4em;
+	font-family: 'Oswald', sans-serif;
+	color: #FFFFFF55;
+}
+
+div.temp .value
+{
+	font-size: 4em;
+}
+
+div.right
+{
+	float: right;
+}
+
+div.left
+{
+	float: left;
+}
+
+div.clear
+{
+	clear: both;
+}
+
+.temp .hl
+{
+	margin-top: 18px;
+}
+
+.fa-toggle-off { color: #FFFFFF55; }
+.fa-toggle-on { color: #ff5c5cFF; }
+
+
+.button {
+    background-color: #00000044;
+    border: 1px solid #FFFFFF22;
+    padding: 0 35px;
+    line-height:46px;
+    float: left;
+    color: #FFF;
+    cursor: pointer;
+	font-family: 'Oswald', sans-serif;
+	letter-spacing: 4px;
+}
+
+.button.selected {
+  background-color: #FFFFFF33;
+}
+
+#set-temp {
+	color: #ff5c5c;
+}
+
+#temp-dialog table {
+	width: 100%;
+}
+
+#temp-dialog table td:first-child {
+	font-weight: bold;
+	width: 120px;
+}
+
+#desired-temp {
+	width: 80px;
+}
+
+
+
+
+
+
+.hidden {
+  display: none !important;
+}
+
+
+
+
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}

@@ -1,0 +1,112 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+	<meta charset="utf-8">
+	<title>RaspberryPool Control Panel</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<script src="https://kit.fontawesome.com/3840fca004.js" crossorigin="anonymous"></script>
+	
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+	<link href="js/vendor/jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/mobile.css?v=1">
+
+	<meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+	<header class="clearfix">
+		<div class="left">
+			<img src="img/pi.png" id="logo" alt="" />
+		</div>
+		Raspberry<br />Pool
+	</header>
+	
+	<div id="content">
+		<div class="temp clearfix">
+			<div class="label clearfix">
+				<div class="left">
+					<i class="fas fa-swimmer"></i> POOL:
+				</div>
+				<div class="right">
+					<span class="fas fa-toggle-on" id="pump-on" style="display: none;"></span>
+					<span class="fas fa-toggle-off" id="pump-off"></span>
+				</div>
+			</div>
+			<div class="left">
+				<div class="value" id="pool-latest"></div>
+			</div>
+		</div>
+		
+		<div class="temp clearfix">
+			<div class="label clearfix">
+				<div class="left">
+					<i class="fas fa-fire-alt"></i> HEATER:
+				</div>
+				<div class="right">
+					<span class="fas fa-toggle-on" id="heater-on" style="display: none;"></span>
+					<span class="fas fa-toggle-off" id="heater-off"></span>
+				</div>
+			</div>
+			<div class="left">
+				<div class="value" id="heater-latest"></div>
+			</div>
+		</div>
+		
+		<div class="temp clearfix">
+			<div class="label clearfix">
+				<i class="fas fa-wind"></i> AIR:
+			</div>
+			<div class="left">
+				<div class="value" id="air-latest"></div>
+			</div>
+		</div>
+	
+		<div id="set-temp" class="button">Heat the Pool</div>
+	</div>
+	
+	<div id="custom-dialog" title="Custom Date Range">
+		<table id="custom-date-range">
+			<tr>
+				<td>From:</td>
+				<td><input type="text" class="timepick" /></td>
+			</tr>
+			<tr>
+				<td>To:</td>
+				<td><input type="text" class="timepick" /></td>
+			</tr>
+		</table>
+	</div>
+	
+	<div id="temp-dialog" title="Set Temperature">
+		<table>
+			<tr>
+				<td>Temp</td>
+				<td><input type="text" id="desired-temp" /> °C</td>
+			</tr>
+			<tr>
+				<td>From</td>
+				<td><input type="text" class="timepick" id="temp-start" /></td>
+			</tr>
+			<tr>
+				<td>To</td>
+				<td><input type="text" class="timepick" id="temp-end" /></td>
+			</tr>
+		</table>
+	</div>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+	<script src="js/vendor/jquery-ui-1.12.1/jquery-ui.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
